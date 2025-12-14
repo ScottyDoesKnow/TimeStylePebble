@@ -40,7 +40,7 @@ void inbox_received_callback(DictionaryIterator *iterator, void *context) {
     weatherDataUpdated = true;
   }
 
-  if(settings.useApparentTemperature) {
+  if(true) {
     Tuple *weatherAppTemp_tuple = dict_find(iterator, MESSAGE_KEY_WeatherApparentTemperature);
     if(weatherAppTemp_tuple != NULL) {
       Weather_weatherInfo.currentTemp = (int)weatherAppTemp_tuple->value->int32;
