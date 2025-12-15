@@ -38,7 +38,7 @@ void Settings_loadFromStorage() {
   #ifdef PBL_ROUND
   settings.autoReplaceIndex = 0;
   #else
-  settings.autoReplaceIndex = 2;
+  settings.autoReplaceIndex = 1;
   #endif
 
   // to correct settings migration bug (settings key v6), we must do another migration (nooooooooooo)
