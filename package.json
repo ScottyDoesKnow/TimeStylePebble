@@ -41,6 +41,7 @@
       "WeatherApparentTemperature",
       "SettingAltClockName",
       "SettingAltClockOffset",
+      "SettingAutoReplaceIndex",
       "SettingDisableAutobattery",
       "SettingBluetoothVibe",
       "SettingDisconnectIcon",
@@ -49,6 +50,7 @@
       "SettingColorSidebar",
       "SettingColorTime",
       "SettingDecimalSep",
+      "SettingDisableAutoQuietTime",
       "SettingHealthUseDistance",
       "SettingHealthUseRestfulSleep",
       "SettingHourlyVibe",
@@ -199,6 +201,11 @@
         {
           "file": "data/HEALTH_HEART.pdc",
           "name": "HEALTH_HEART",
+          "type": "raw"
+        },
+        {
+          "file": "data/QUIET_TIME.pdc",
+          "name": "QUIET_TIME",
           "type": "raw"
         },
         {
