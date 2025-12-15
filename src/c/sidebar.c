@@ -164,7 +164,7 @@ int getReplacableWidget(bool isDisconnect) {
   }
 
   // if we don't have any of those things, replace the preferred widget
-  return 2;
+  return settings.autoReplaceIndex;
 }
 
 #endif
