@@ -2,6 +2,8 @@
 #include <pebble.h>
 #include "sidebar_widgets.h"
 
+#define USE_PERSONAL_CHANGES true
+
 #define CURRENT_SETTINGS_VERSION 7
 
 // persistent storage keys

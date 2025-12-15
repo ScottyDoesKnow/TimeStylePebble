@@ -114,7 +114,7 @@ bool isAutoBatteryShown() {
 }
 
 bool isAutoQuietTimeShown() {
-  return !settings.disableAutoQuietTime && quiet_time_is_active();
+  return (!settings.disableAutoQuietTime || USE_PERSONAL_CHANGES) && quiet_time_is_active();
 }
 
 #ifdef PBL_ROUND
@@ -164,7 +164,7 @@ int getReplacableWidget(bool isDisconnect) {
   }
 
   // if we don't have any of those things, replace the preferred widget
-  return settings.autoReplaceIndex;
+  return USE_PERSONAL_CHANGES ? 2 : settings.autoReplaceIndex;
 }
 
 #endif
